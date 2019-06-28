@@ -22,14 +22,14 @@ body {
 
 #name {
     color: black;
-    font-size: 100px;
+    font-size: 16vh;
     letter-spacing: 10px;
     top: 50%;
 }
 
 #job {
     color: black;
-    font-size: 40px;
+    font-size: 6vh;
     top: 30%;
 }
 
@@ -70,6 +70,8 @@ body {
 
 .btn:hover + .tooltiptext {
     visibility: visible;
+    opacity: 1;
+    bottom: 100%;
 }
 
 .btn:hover i {
@@ -79,6 +81,7 @@ body {
 
 .tooltiptext {
     visibility: hidden;
+    opacity: 0;
     font-family: monospace;
     width: 100px;
     background-color: white;
@@ -87,10 +90,13 @@ body {
     padding: 5px;
 
     border:1px solid black;
-
     border-radius: 6px;
 
     position: absolute;
-    bottom: 100%;
+    margin-bottom: 10px;
+
+    bottom: 70%;
     left: 0;
+    z-index: -1;
+    transition: all 0.5s;
 }
