@@ -22,14 +22,14 @@ body {
 
 #name {
     color: black;
-    font-size: 16vh;
+    font-size: 8vw;
     letter-spacing: 10px;
     top: 50%;
 }
 
 #job {
     color: black;
-    font-size: 6vh;
+    font-size: 3vw;
     top: 30%;
 }
 
